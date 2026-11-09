@@ -1,0 +1,9 @@
+project: savantenvs/arkime
+target: sfuzzloch-mined-fa7a5c7
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/sfuzzloch-mined-fa7a5c7/testsuite
+cmds:
+  - cmd: /mayhem/sfuzzloch
+    libfuzzer: true
+    timeout: 30
