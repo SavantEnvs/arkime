@@ -1,0 +1,9 @@
+project: savantenvs/arkime
+target: fuzzloch
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzzloch/testsuite
+cmds:
+  - cmd: /mayhem/fuzzloch
+    libfuzzer: true
+    timeout: 30
